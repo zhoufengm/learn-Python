@@ -84,7 +84,6 @@ print (list[2:])        # 输出从第三个元素开始的所有元素
 print (tinylist * 2)    # 输出两次列表
 print (list + tinylist) # 连接列表
 
-from tkinter import W
 
 #翻转字符串,就是自己写函数  
 # 假设列表 list = [1,2,3,4],  
