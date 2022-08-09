@@ -3,7 +3,7 @@
 
 import imp
 
-
+'''
 str='123456789'
 
 print(str)          #输出字符串
@@ -58,3 +58,60 @@ print('path:',path) # 因为已经导入path成员，所以此处引用时不需
 
 #ctrl+/注释掉一整段
 
+
+#截取字符串的一部分并与其他字段拼接
+var1 = 'Hello World!'
+print("已更新字符串： ",var1[:6] + 'Runoob!')
+
+
+a = 'Hello'
+b = 'Python'
+print('a : ',a)
+print('b : ',b)
+print('a + b : ',a+b)
+print('a * 2 : ',a*2)
+print('a[1] : ',a[1])
+print('a[1:4] : ',a[1:4])
+
+if ("H" in a):
+    print("H is in a")
+else:
+    print("H is not in a")
+if ("M" not in a):
+    print("M is not in a")
+else:
+    print("M is in a")
+print(r'\n')
+print(R'\n')
+
+
+print("我叫%s, 今年%d岁！" % ('小明',10))
+name = 'Runoob'
+print('Hello %s ' % name)
+# f开头，后面跟着字符串，字符串中的表达式用大括号{}包起来，它会将变量或表达式计算后的值替换进去
+# 这样就不用判断使用 %s ,还是 %d  
+print(f'Hello {name}')      #替换变量
+print('1+2=',f'{1+2}')      # 使用表达式
+w = {'name':'Runoob','url':'www.runoob.com'}
+print(f'{w["name"]}:{w["url"]}')
+x = 1
+print(f'{x+1}')
+print(f'{x+1=}')
+
+
+#三引号允许一个字符串跨多行，字符串中可以包含换行符、制表符以及其他特殊字符
+# WYSIWYG（所见即所得）
+para_str = """ 这是一个多行字符串的实例
+多行字符串可以使用制表符
+TAB( \t )
+也可以使用换行符[ \n ]
+"""
+print(para_str)
+
+'''
+
+#方法strip()返回字符串的副本，其中所有字符都已从字符串的开头和结尾处删除（默认的空白字符）
+space_str = '   this is test 01. '
+print(space_str.strip())    #默认删去头尾空格
+space_str = '0000this is test 0200000'
+print(space_str.strip('0'))    #传参数指定删除头尾字符‘0’
