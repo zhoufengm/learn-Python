@@ -116,16 +116,4 @@ print(a)
 print(type(a))
 
 
-
-#元组推导式
-#元组推导式可以利用 range 区间、元组、列表、字典和集合等数据类型，快速生成一个满足指定需求的元组。
-# (expression for item in Sequence )
-# 或
-# (expression for item in Sequence if conditional )
-
-#生成一个包含数字 1~9 的元组
-a = (x for x in range (1,10))
-print('a is : ',a)  # 返回的是生成器对象
-print(tuple(a))     # 使用 tuple() 
-
 '''
