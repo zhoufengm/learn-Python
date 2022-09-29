@@ -1,0 +1,43 @@
+water_air_pic	水机空调（485协议）
+com_pic	通用图片（控制页电源开关，常用设备switch图标，注意首页的电源图片和这个不同）
+robot-pic 莱茵感知机器人空调图片
+air_pic	中央空调（485协议）
+	refrigeration	制冷模式
+	heat		制热模式
+	dehumidification	除湿模式
+	circulation	通风模式
+	auto 		自动模式
+
+
+bar_pic	窗帘行程条
+	h表示横向，v表示纵向，m表示梦幻帘首页行程条，mk表示梦幻帘在控制页行程条，
+	后面的数字对应该行程条实际的百分比。
+
+
+ven_pic	温控面板
+	dn	地暖
+	sj	水机空调
+	设备更换图片统一加 ”pic_"前缀（图片名只能用英文，不能有中文）
+	gem_grey 	宝石灰
+	sumatra_grey 	苏门答腊灰
+	clouds_silver 	云雾银
+	glacier_grey 	冰川银
+	pure_gold 	纯金
+	amsterdam_orange阿姆斯特丹橙
+
+
+ql-pic	七路开关控制器
+	sj-cool 	水机空调制冷模式
+	sj-heat   	水机空调制热模式
+	dn-sw	地暖室温温度传感器
+	dn-db	地暖地表温度传感器
+
+
+当空调类型有最低温度和最高温度的
+min	当前模式下最低温度
+max	当前模式下最高温度
+直接写数值的则为当前模式下默认的最低最高温度下的当前温度值
+举例：七路控制开关中水机空调制冷模式下的图片
+	目录：:\AppAutoTest\test_pic\ql-pic\sj-cool
+	min17-max24-24——温度范围：最低温度17，最高温度24；当前温度24
+	24——温度范围：最低温度16，最高温度30；当前温度24
