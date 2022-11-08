@@ -1,0 +1,10 @@
+# yaml关键字注意冒号后面要有空格！
+# 多个(对象)多个属性
+# user:
+#   name: sichen
+#   age: 17
+#注意 : 层级之间名称不能重复
+
+user1:
+  usr: zzauto
+  pwd: zz123456
