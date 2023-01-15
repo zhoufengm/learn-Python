@@ -74,9 +74,12 @@ for staff in data_all:
 
 # # 获取指定行列数据
 # data_some = active_ws.iter_rows(min_row=5,max_row=7,min_col=1,max_col=3,values_only=True)
-# for cell in data_some:
-#     print(cell)
-#     # print(cell[1])  # 打印第2列数据
+# for row in data_some:
+#     print(row)
+#     # print(row[1])  # 打印第2列数据
+#     # 若想打印这行的每一个单元格，可以再加一层循环
+#     for cell in row：
+#           print(cell)
 
 # # []获取单行或单列，输出<Cell'工作表名称'.坐标>形式的元组
 # print(active_ws['A'])
